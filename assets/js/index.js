@@ -4,6 +4,9 @@ const weatherForm = document.querySelector(".weatherForm");
 const cityInput = document.querySelector(".cityInput");
 const card = document.querySelector(".card");
 const apiKey = "4cee11a3a7e82d9fb8aae679f6c88b21";
+const popup = document.getElementById("popup");
+const popupMessage = document.getElementById("popup-message");
+const closeBtn = document.querySelector(".close");
 
 weatherForm.addEventListener("submit", async event => {
     event.preventDefault();
@@ -22,6 +25,21 @@ weatherForm.addEventListener("submit", async event => {
         }
     } else {
         displayError("Please enter a city");
+    }
+});
+
+document.getElementById("howToUse").addEventListener("click", () => {
+    showPopup("To use this app, simply enter the name of a city in the input field and click 'Get Weather'. The app will display the current weather information for the specified city.");
+});
+
+document.getElementById("about").addEventListener("click", () => {
+    showPopup("This app was built by Jake Boateng while studying for the Code Institute Full Stack Software Development Diploma.");
+});
+
+closeBtn.addEventListener("click", hidePopup);
+popup.addEventListener("click", (e) => {
+    if (e.target === popup) {
+        hidePopup();
     }
 });
 
@@ -76,11 +94,11 @@ function getWeatherEmoji(weatherId) {
         case (weatherId >= 600 && weatherId < 700): // Snow
             return '<i class="fas fa-snowflake" style="color: lightcyan;"></i>';
         case (weatherId >= 700 && weatherId < 800): // Atmosphere (fog, mist, etc.)
-            return '<i class="fas fa-smog" style="color:  #ffffff;"></i>';
+            return '<i class="fas fa-smog" style="color: lightgray;"></i>';
         case (weatherId === 800): // Clear sky
             return '<i class="fas fa-sun" style="color: orange;"></i>';
         case (weatherId >= 801 && weatherId < 810): // Cloudy
-            return '<i class="fas fa-cloud" style="color:  #ffffff;"></i>';
+            return '<i class="fas fa-cloud" style="color: silver;"></i>';
         default: // Unknown weather
             return '<i class="fas fa-question" style="color: red;"></i>';
     }
@@ -105,4 +123,15 @@ function showLoading() {
 // Hide loading indicator
 function hideLoading() {
     card.textContent = "";
+}
+
+// Show pop-up message
+function showPopup(message) {
+    popupMessage.textContent = message;
+    popup.style.display = "flex";
+}
+
+// Hide pop-up message
+function hidePopup() {
+    popup.style.display = "none";
 }
