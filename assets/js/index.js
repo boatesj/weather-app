@@ -7,14 +7,17 @@ const apiKey = "4cee11a3a7e82d9fb8aae679f6c88b21";
 
 weatherForm.addEventListener("submit", async event => {
     event.preventDefault();
-    const city = cityInput.value;
+    const city = cityInput.value.trim();
 
     if (city) {
+        showLoading();
         try {
             const weatherData = await getWeatherData(city);
+            hideLoading();
             displayWeatherInfo(weatherData);
         } catch (error) {
             console.error(error);
+            hideLoading();
             displayError(error.message);
         }
     } else {
@@ -27,47 +30,41 @@ async function getWeatherData(city) {
     const response = await fetch(apiUrl);
 
     if (!response.ok) {
-        throw new Error("Could not fetch weather data");
+        const { cod, message } = await response.json();
+        throw new Error(`Error ${cod}: ${message}`);
     }
 
     return await response.json();
-    
 }
 
-//Weather info display
+// Weather info display
 function displayWeatherInfo(data) {
     const { name: city, main: { temp, humidity }, weather: [{ description, id }] } = data;
 
     card.textContent = "";
     card.style.display = "flex";
 
-    const cityDisplay = document.createElement("h1");
-    const tempDisplay = document.createElement("p");
-    const humidityDisplay = document.createElement("p");
-    const descDisplay = document.createElement("p");
+    const cityDisplay = createDisplayElement("h1", city, "cityDisplay");
+    const tempDisplay = createDisplayElement("p", `${(temp - 273.15).toFixed(1)}°C`, "tempDisplay");
+    const humidityDisplay = createDisplayElement("p", `Humidity: ${humidity}%`, "humidityDisplay");
+    const descDisplay = createDisplayElement("p", description, "descDisplay");
     const weatherEmoji = document.createElement("p");
+    weatherEmoji.innerHTML = getWeatherEmoji(id);
 
-    cityDisplay.textContent = city;
-    tempDisplay.textContent = `${(temp - 273.15).toFixed(1)}°C`;
-    humidityDisplay.textContent = `Humidity: ${humidity}%`;
-    descDisplay.textContent = description;
-    weatherEmoji.innerHTML = getWeatherEmoji(id);  // Use innerHTML to parse HTML
-
-    cityDisplay.classList.add("cityDisplay");
-    tempDisplay.classList.add("tempDisplay");
-    humidityDisplay.classList.add("humidityDisplay");
-    descDisplay.classList.add("descDisplay");
     weatherEmoji.classList.add("weatherEmoji");
 
-    card.appendChild(cityDisplay);
-    card.appendChild(tempDisplay);
-    card.appendChild(humidityDisplay);
-    card.appendChild(descDisplay);
-    card.appendChild(weatherEmoji);   
-   
+    card.append(cityDisplay, tempDisplay, humidityDisplay, descDisplay, weatherEmoji);
 }
 
-//Weather emojis with colors
+// Create display element helper function
+function createDisplayElement(tag, textContent, className) {
+    const element = document.createElement(tag);
+    element.textContent = textContent;
+    element.classList.add(className);
+    return element;
+}
+
+// Weather emojis with colors
 function getWeatherEmoji(weatherId) {
     switch (true) {
         case (weatherId >= 200 && weatherId < 300): // Thunderstorm
@@ -79,23 +76,33 @@ function getWeatherEmoji(weatherId) {
         case (weatherId >= 600 && weatherId < 700): // Snow
             return '<i class="fas fa-snowflake" style="color: lightcyan;"></i>';
         case (weatherId >= 700 && weatherId < 800): // Atmosphere (fog, mist, etc.)
-            return '<i class="fas fa-smog" style="color: lightgray;"></i>';
+            return '<i class="fas fa-smog" style="color:  #ffffff;"></i>';
         case (weatherId === 800): // Clear sky
             return '<i class="fas fa-sun" style="color: orange;"></i>';
         case (weatherId >= 801 && weatherId < 810): // Cloudy
-            return '<i class="fas fa-cloud" style="color: silver;"></i>';
+            return '<i class="fas fa-cloud" style="color:  #ffffff;"></i>';
         default: // Unknown weather
             return '<i class="fas fa-question" style="color: red;"></i>';
-    
     }
 }
 
+// Display error messages
 function displayError(message) {
-    const errorDisplay = document.createElement("p");
-    errorDisplay.textContent = message;
-    errorDisplay.classList.add("errorDisplay");
-
     card.textContent = "";
     card.style.display = "flex";
+    const errorDisplay = createDisplayElement("p", message, "errorDisplay");
     card.appendChild(errorDisplay);
+}
+
+// Show loading indicator
+function showLoading() {
+    const loadingDisplay = createDisplayElement("p", "Loading...", "loadingDisplay");
+    card.textContent = "";
+    card.style.display = "flex";
+    card.appendChild(loadingDisplay);
+}
+
+// Hide loading indicator
+function hideLoading() {
+    card.textContent = "";
 }
