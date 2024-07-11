@@ -53,6 +53,12 @@ function displayWeatherInfo(data) {
     descDisplay.textContent = description;
     weatherEmoji.innerHTML = getWeatherEmoji(id);  // Use innerHTML to parse HTML
 
+    cityDisplay.classList.add("cityDisplay");
+    tempDisplay.classList.add("tempDisplay");
+    humidityDisplay.classList.add("humidityDisplay");
+    descDisplay.classList.add("descDisplay");
+    weatherEmoji.classList.add("weatherEmoji");
+
     
    
 }
