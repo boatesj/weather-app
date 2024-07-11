@@ -72,6 +72,8 @@ function getWeatherEmoji(weatherId) {
     switch (true) {
         case (weatherId >= 200 && weatherId < 300): // Thunderstorm
             return '<i class="fas fa-bolt" style="color: darkslateblue;"></i>';
+        case (weatherId >= 300 && weatherId < 400): // Drizzle
+            return '<i class="fas fa-cloud-rain" style="color: lightsteelblue;"></i>';
     
     }
 }
