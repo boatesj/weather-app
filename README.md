@@ -1,131 +1,195 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# World City Weather App
 
-Welcome Jake Boateng,
+World City Weather App is a web-based application that provides users with current weather information for any city worldwide.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+[Visit the deployed site here](#)
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+## CONTENTS
 
-## Gitpod Reminders
+- [Rationale](#rationale)
+- [User Stories](#user-stories)
+- [Design](#design)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Deployment and Development](#deployment-and-development)
+- [Testing](#testing)
+- [Bugs](#bugs)
+- [Credits](#credits)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Rationale
 
-`python3 -m http.server`
+### Project Introduction
 
-A blue button should appear to click: _Make Public_,
+World City Weather App is a user-friendly application designed to provide accurate and up-to-date weather information for cities around the world. The primary objective of this project is to create a simple and intuitive interface where users can quickly access weather data.
 
-Another blue button should appear to click: _Open Browser_.
+### Motivation and Inspiration
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+The motivation behind creating the World City Weather App stems from the need for a straightforward and accessible tool to check weather conditions. With the increasing reliance on web applications for daily tasks, this project aims to provide a reliable and easy-to-use weather forecasting tool.
 
-A blue button should appear to click: _Make Public_,
+### Background Information
 
-Another blue button should appear to click: _Open Browser_.
+Weather forecasting is a critical aspect of daily life, influencing activities and decisions. While numerous weather apps exist, many are cluttered with ads or complex features. This project focuses on delivering essential weather information in a clean and efficient manner.
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Project Scope and Limitations
 
-To log into the Heroku toolbelt CLI:
+The scope of the project includes developing the web-based app with the following features:
+- Real-time weather data retrieval.
+- User-friendly interface.
+- Accessibility considerations.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+Known limitations:
+- The app relies on external APIs, which can affect data availability and accuracy.
+- Cross-browser compatibility efforts have been made, but some features might not work optimally on all browsers.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+### Problem Statement
 
-### Connecting your Mongo database
+The primary problem addressed by the World City Weather App is the need for a simple, ad-free weather application that provides accurate information without unnecessary complexity.
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+### Proposed Solution
 
-------
+The app proposes the following features to solve the identified problems:
+- Clean and intuitive UI.
+- Reliable weather data from a trusted API.
+- Accessibility features to ensure usability for all users.
 
-## Release History
+### Benefits and Advantages
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- **Educational Value**: Users can learn about current weather conditions globally.
+- **User Engagement**: Simple and interactive interface keeps users engaged.
+- **Accessibility**: Designed to be accessible to all users.
+- **Ease of Use**: No need for additional installations or plugins.
 
-**June 18, 2024,** Add Mongo back into template
+### Future Versions
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+Future enhancements may include:
+- Detailed forecasts (hourly, weekly).
+- Historical weather data.
+- Alerts and notifications for severe weather conditions.
+- Multi-language support.
 
-**May 28 2024:** Fix Mongo and Links installs
+## User Stories
 
-**April 26 2024:** Update node version to 16
+1. **As a first-time visitor, I want to quickly understand the app’s purpose and how to use it.**
+2. **As a user, I want to input a city name and receive current weather information instantly.**
+3. **As a frequent traveler, I want to check the weather for multiple cities easily.**
+4. **As a visually impaired user, I want the app to be fully accessible.**
 
-**September 20 2023:** Update Python version to 3.9.17.
+## Design
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+### Colour Scheme
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+The app uses a clean and modern color scheme with high contrast to ensure readability and appeal. The chosen color palette can be viewed [here](https://coolors.co/d00000-ffba08-3f88c5-032b43-136f63).
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### Typography
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+The app utilizes the Roboto font for its clean and professional appearance.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Wireframes
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+- **Desktop**: [Desktop Wireframe](#)
+- **Tablet**: [Tablet Wireframe](#)
+- **Mobile**: [Mobile Wireframe](#)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## Features
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Favicon
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+The app features a weather-themed favicon for easy identification.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### The Navbar
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- **Home**: Links back to the main page.
+- **How to Use**: Opens a pop-up with instructions.
+- **About**: Opens a pop-up with information about the developer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### The Welcome Page
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+Provides a brief introduction and prompts the user to enter a city name.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### The Weather Display Card
 
-------
+- **City Name**: Displays the entered city name.
+- **Temperature**: Shows the current temperature.
+- **Weather Description**: Provides a brief description of the weather.
+- **Humidity**: Displays the current humidity level.
+- **Weather Icon**: Shows an icon representing the current weather condition.
 
-## FAQ about the uptime script
+### Accessibility
 
-**Why have you added this script?**
+Designed with accessibility in mind, including high contrast and screen reader compatibility.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+## Technologies
 
-**How will this affect me?**
+### Languages
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+- HTML
+- CSS
+- JavaScript
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### Frameworks, Libraries, and Programs
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+- **FontAwesome**: For weather icons.
+- **Google Fonts**: For typography.
+- **OpenWeather API**: For fetching weather data.
 
-**So….?**
+## Deployment and Development
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### Deployment
 
-**Can I opt out?**
+The site is deployed using GitHub Pages. [Visit the deployed site here](#).
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+To deploy the site using GitHub Pages:
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+1. Login (or signup) to GitHub.
+2. Go to the repository for this project.
+3. Click the settings button.
+4. Select Pages in the left-hand navigation menu.
+5. From the source dropdown, select main branch and press save.
 
-**Anything more?**
+### Local Development
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+#### Extensions required
 
----
+Your IDE will need HTML, CSS, and JavaScript extensions installed.
 
-Happy coding!
+#### How to Fork
+
+To fork the repository:
+
+1. Log in (or sign up) to GitHub.
+2. Go to the repository for this project.
+3. Click the Fork button in the top right corner.
+
+#### How to Clone
+
+To clone the repository:
+
+1. Log in (or sign up) to GitHub.
+2. Go to the repository for this project.
+3. Click on the code button, select whether you would like to clone with HTTPS, SSH, or GitHub CLI, and copy the link shown.
+4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+
+### APIs
+
+This project uses the OpenWeather API. Sign up for an API key [here](https://openweathermap.org/api).
+
+## Testing
+
+### Manual Testing
+
+Testing involved manually checking the functionality across different browsers and devices to ensure compatibility and responsiveness.
+
+### Automated Testing
+
+- **W3C Validator**: HTML and CSS validation.
+- **Lighthouse**: Performance, accessibility, and SEO scores.
+- **JS Hint**: JavaScript code quality and error checking.
+
+### Bugs
+
+- **Known Issue**: In some browsers, the weather icons might not load correctly. This is being investigated.
+
+## Credits
+
+This project was developed as part of the Code Institute Full Stack Software Development Diploma. Special thanks to online resources such as Stack Overflow, W3C, MDN, and the WebDev Simplified YouTube channel for guidance and solutions to various challenges.
