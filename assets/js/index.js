@@ -80,6 +80,12 @@ function getWeatherEmoji(weatherId) {
             return '<i class="fas fa-snowflake" style="color: lightcyan;"></i>';
         case (weatherId >= 700 && weatherId < 800): // Atmosphere (fog, mist, etc.)
             return '<i class="fas fa-smog" style="color: lightgray;"></i>';
+        case (weatherId === 800): // Clear sky
+            return '<i class="fas fa-sun" style="color: orange;"></i>';
+        case (weatherId >= 801 && weatherId < 810): // Cloudy
+            return '<i class="fas fa-cloud" style="color: silver;"></i>';
+        default: // Unknown weather
+            return '<i class="fas fa-question" style="color: red;"></i>';
     
     }
 }
