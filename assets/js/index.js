@@ -59,7 +59,11 @@ function displayWeatherInfo(data) {
     descDisplay.classList.add("descDisplay");
     weatherEmoji.classList.add("weatherEmoji");
 
-    
+    card.appendChild(cityDisplay);
+    card.appendChild(tempDisplay);
+    card.appendChild(humidityDisplay);
+    card.appendChild(descDisplay);
+    card.appendChild(weatherEmoji);   
    
 }
 
