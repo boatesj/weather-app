@@ -44,7 +44,7 @@ nav a:hover {
 }
 
 .cityInput:focus {
-    outline: 3px solid hsl(210, 100%, 40%);
+    outline: 2px solid hsla(0, 0%, 20%, 0.377);
 }
 
 button[type="submit"] {
