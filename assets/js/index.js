@@ -69,6 +69,9 @@ function displayWeatherInfo(data) {
 
 //Weather emojis with colors
 function getWeatherEmoji(weatherId) {
+    switch (true) {
+        case (weatherId >= 200 && weatherId < 300): // Thunderstorm
+            return '<i class="fas fa-bolt" style="color: darkslateblue;"></i>';
     
     }
 }
