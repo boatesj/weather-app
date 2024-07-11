@@ -33,7 +33,7 @@ document.getElementById("howToUse").addEventListener("click", () => {
 });
 
 document.getElementById("about").addEventListener("click", () => {
-    showPopup("This app was built by Jake Boateng while studying for the Code Institute Full Stack Software Development Diploma.");
+    showPopup("This app was built by Jake Boateng while studying for the Code Institute Full Stack Software Development Diploma. The app uses openweathermap.org API to generate the current weather info");
 });
 
 closeBtn.addEventListener("click", hidePopup);
