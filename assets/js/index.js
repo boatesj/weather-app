@@ -76,6 +76,10 @@ function getWeatherEmoji(weatherId) {
             return '<i class="fas fa-cloud-rain" style="color: lightsteelblue;"></i>';
         case (weatherId >= 500 && weatherId < 600): // Rain
             return '<i class="fas fa-cloud-showers-heavy" style="color: steelblue;"></i>';
+        case (weatherId >= 600 && weatherId < 700): // Snow
+            return '<i class="fas fa-snowflake" style="color: lightcyan;"></i>';
+        case (weatherId >= 700 && weatherId < 800): // Atmosphere (fog, mist, etc.)
+            return '<i class="fas fa-smog" style="color: lightgray;"></i>';
     
     }
 }
