@@ -195,6 +195,7 @@ async function getWeatherData(city) {
 
     return await response.json();
 }
+```
 
 ### Accessibility
 
