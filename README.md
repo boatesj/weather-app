@@ -166,3 +166,12 @@ Provides a brief introduction and prompts the user to enter a city name.
 
 ![Display card](/assets/images/weatherApp-1.png)
 ![Display card](/assets/images/weatherApp-2.png)
+
+### Error Handling
+
+The app includes robust error handling mechanisms to enhance user experience:
+
+- **Invalid City Name**: If a user enters a city name that cannot be found, the app displays a friendly error message informing the user that the city was not found and suggests checking the spelling.
+![If a city cannot be found](/assets/images/weatherApp-4.png)
+- **Empty City Field**: If the user attempts to search for weather information without entering a city name, the app prompts the user to enter a city name.
+![If the city field is empty on click](/assets/images/weatherApp-3)
