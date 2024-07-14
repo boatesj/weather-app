@@ -136,3 +136,33 @@ The app utilizes the Roboto font for its clean and professional appearance.
 - **Desktop**: ![Desktop Wireframe](/assets/images/desktop-wireframe.png)
 - **Tablet**: ![Tablet Wireframe](/assets/images/tablet-wireframes.png)
 - **Mobile**: ![Mobile Wireframe](/assets/images/mobile-wireframes.png)
+
+## Features
+
+### Favicon
+
+The app features a weather-themed favicon for easy identification.
+- **Favicon**: ![World City Weather App](/assets/images/weather-favicon.png)
+
+
+### The Navbar
+
+- **Home**: Links back to the main page. ![Main page](/assets/images/weatherApp-5.png)
+- **How to Use**: Opens a pop-up with instructions. ![How to use pop-up message](/assets/images/how-to.png)
+- **About**: Opens a pop-up with information about the developer. ![About pop-up message](/assets/images/wa-about.png)
+
+### The Welcome Page
+
+Provides a brief introduction and prompts the user to enter a city name.
+![Welcome](/assets/images/weatherApp-5.png)
+
+### The Weather Display Card
+
+- **City Name**: Displays the entered city name.
+- **Temperature**: Shows the current temperature.
+- **Weather Description**: Provides a brief description of the weather.
+- **Humidity**: Displays the current humidity level.
+- **Weather Icon**: Shows an icon representing the current weather condition.
+
+![Display card](/assets/images/weatherApp-1.png)
+![Display card](/assets/images/weatherApp-2.png)
