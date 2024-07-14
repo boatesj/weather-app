@@ -49,7 +49,11 @@ async function getWeatherData(city) {
 
     if (!response.ok) {
         const { cod, message } = await response.json();
-        throw new Error(`Error ${cod}: ${message}`);
+        if (cod === "404") {
+            throw new Error(`City not found. Please check the city name and try again.`);
+        } else {
+            throw new Error(`Error ${cod}: ${message}`);
+        }
     }
 
     return await response.json();
