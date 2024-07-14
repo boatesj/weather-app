@@ -120,5 +120,5 @@ World City Weather App is an innovative application providing real-time weather 
 
 The app uses a clean and modern color scheme with high contrast to ensure readability and appeal. Here is the chosen colour palette  ![Colour palette](/assets/images/color-palette.png).
 colour scheme - 1
-[Colour palette](/assets/images/color-palette-2.png).
+![Colour palette](/assets/images/color-palette-2.png).
 colour scheme - 2
