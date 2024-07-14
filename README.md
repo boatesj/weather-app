@@ -126,11 +126,11 @@ colour scheme - 2
 ### Typography
 
 The app utilizes the Roboto font for its clean and professional appearance.
-- [Roboto](https://fonts.google.com/specimen/Roboto) for the heading and display text.
+- ![Roboto](https://fonts.google.com/specimen/Roboto) for the heading and display text.
 
 
 ### Wireframes
 
-- **Desktop**: ![Desktop Wireframe](/assets/imaegs/desktop-wireframe.png)
+- **Desktop**: ![Desktop Wireframe](/assets/images/desktop-wireframe.png)
 - **Tablet**: ![Tablet Wireframe](/assets/images/tablet-wireframes.png)
 - **Mobile**: ![Mobile Wireframe](/assets/images/mobile-wireframes.png)
