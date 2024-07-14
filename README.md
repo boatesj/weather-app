@@ -220,7 +220,7 @@ Designed with accessibility in mind, including high contrast and screen reader c
 
 ### Deployment
 
-The site is deployed using GitHub Pages. [Visit the deployed site here](https://boatesj.github.io/weather-app/).
+The site is deployed using GitHub Pages. [Visit the deployed site here](https://github.com/boatesj/weather-app).
 
 To deploy the site using GitHub Pages:
 
