@@ -142,7 +142,7 @@ The app utilizes the Roboto font for its clean and professional appearance.
 ### Favicon
 
 The app features a weather-themed favicon for easy identification.
-- **Favicon**: ![World City Weather App](/assets/images/weather-favicon.png)
+- **Favicon**: ![World City Weather App](/assets/images/weatherApp-favicon.png)
 
 
 ### The Navbar
