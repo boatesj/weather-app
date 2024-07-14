@@ -106,3 +106,16 @@ Future enhancements may include:
 ### Summary
 
 World City Weather App is an innovative application providing real-time weather information for cities worldwide. With its clean design and user-friendly interface, it aims to offer an efficient and enjoyable user experience.
+
+## User Stories
+
+1. **As a first-time visitor, I want to quickly understand the app’s purpose and how to use it.**
+2. **As a user, I want to input a city name and receive current weather information instantly.**
+3. **As a frequent traveler, I want to check the weather for multiple cities easily.**
+4. **As a visually impaired user, I want the app to be fully accessible.**
+
+## Design
+
+### Colour Scheme
+
+The app uses a clean and modern color scheme with high contrast to ensure readability and appeal. Here is the chosen colour palette  ![Colour palette](/assets/images/color-palette.png).
