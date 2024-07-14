@@ -214,6 +214,7 @@ Designed with accessibility in mind, including high contrast and screen reader c
 - **FontAwesome**: For weather icons.
 - **Google Fonts**: For typography.
 - **OpenWeather API**: For fetching weather data.
+- **Balsamiq**: For the wireframes.
 
 ## Deployment and Development
 
