@@ -111,14 +111,26 @@ World City Weather App is an innovative application providing real-time weather 
 
 1. **As a first-time visitor, I want to quickly understand the app’s purpose and how to use it.**
 2. **As a user, I want to input a city name and receive current weather information instantly.**
-3. **As a frequent traveler, I want to check the weather for multiple cities easily.**
+3. **As a frequent traveller, I want to check the weather for multiple cities easily.**
 4. **As a visually impaired user, I want the app to be fully accessible.**
 
 ## Design
 
 ### Colour Scheme
 
-The app uses a clean and modern color scheme with high contrast to ensure readability and appeal. Here is the chosen colour palette  ![Colour palette](/assets/images/color-palette.png).
+The app uses a clean and modern color scheme with high contrast to ensure readability and appeal. Here is the chosen colour palette  ![Colour palette](/assets/images/color-palette.png)
 colour scheme - 1
-![Colour palette](/assets/images/color-palette-2.png).
+![Colour palette](/assets/images/color-palette-2.png)
 colour scheme - 2
+
+### Typography
+
+The app utilizes the Roboto font for its clean and professional appearance.
+- [Roboto](https://fonts.google.com/specimen/Roboto) for the heading and display text.
+
+
+### Wireframes
+
+- **Desktop**: ![Desktop Wireframe](/assets/imaegs/desktop-wireframe.png)
+- **Tablet**: ![Tablet Wireframe](/assets/images/tablet-wireframes.png)
+- **Mobile**: ![Mobile Wireframe](/assets/images/mobile-wireframes.png)
