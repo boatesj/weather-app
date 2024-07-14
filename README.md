@@ -176,7 +176,7 @@ The app includes robust error handling mechanisms to enhance user experience:
 - **Empty City Field**: If the user attempts to search for weather information without entering a city name, the app prompts the user to enter a city name.
 ![If the city field is empty on click](/assets/images/weatherApp-err.png)
 
-Here is the code that runs the check and handles error and provides a clear, friendly message that guides the user as to what to do next.
+Here is the code that performs the check, handles any errors, and provides a clear, friendly message to guide the user on what to do next.
 
 ```javascript
 
@@ -195,3 +195,36 @@ async function getWeatherData(city) {
 
     return await response.json();
 }
+
+### Accessibility
+
+Designed with accessibility in mind, including high contrast and screen reader compatibility.
+
+## Technologies
+
+### Languages
+
+- HTML
+- CSS
+- JavaScript
+
+### Frameworks, Libraries, and Programs
+
+- **FontAwesome**: For weather icons.
+- **Google Fonts**: For typography.
+- **OpenWeather API**: For fetching weather data.
+
+## Deployment and Development
+
+### Deployment
+
+The site is deployed using GitHub Pages. [Visit the deployed site here](https://boatesj.github.io/weather-app/).
+
+To deploy the site using GitHub Pages:
+
+1. Login (or signup) to GitHub.
+2. Go to the repository for this project.
+3. Click the settings button.
+4. Select Pages in the left-hand navigation menu.
+5. From the source dropdown, select main branch and press save.
+
