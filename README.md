@@ -3,7 +3,7 @@
 World City Weather App is an interactive and fully-functional web application designed to provide users with real-time weather information for any city worldwide. It aims to offer a seamless interface for checking current weather conditions, forecasts, and other weather-related data. The application is developed using advanced web technologies to ensure responsiveness, usability, and accessibility.
 
 
-- **Desktop**: [Desktop Wireframe](/assets/images/wth-mockup%20(1).png)
+![World City Weather App Screenshot](/assets/images/wth-mockup.png)
 
 [Visit the deployed site here](https://boatesj.github.io/weather-app/)
 
