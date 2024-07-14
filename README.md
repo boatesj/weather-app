@@ -72,3 +72,37 @@ The scope of the project includes developing the web-based app with the followin
 - Real-time weather data retrieval.
 - User-friendly interface.
 - Accessibility considerations.
+
+Known limitations:
+- The app relies on external APIs, which can affect data availability and accuracy.
+- Cross-browser compatibility efforts have been made, but some features might not work optimally on all browsers.
+
+### Problem Statement
+
+The primary problem addressed by the World City Weather App is the need for a simple, ad-free weather application that provides accurate information without unnecessary complexity.
+
+### Proposed Solution
+
+The app proposes the following features to solve the identified problems:
+- Clean and intuitive UI.
+- Reliable weather data from a trusted API.
+- Accessibility features to ensure usability for all users.
+
+### Benefits and Advantages
+
+- **Educational Value**: Users can learn about current weather conditions globally.
+- **User Engagement**: Simple and interactive interface keeps users engaged.
+- **Accessibility**: Designed to be accessible to all users.
+- **Ease of Use**: No need for additional installations or plugins.
+
+### Future Versions
+
+Future enhancements may include:
+- Detailed forecasts (hourly, weekly).
+- Historical weather data.
+- Alerts and notifications for severe weather conditions.
+- Multi-language support.
+
+### Summary
+
+World City Weather App is an innovative application providing real-time weather information for cities worldwide. With its clean design and user-friendly interface, it aims to offer an efficient and enjoyable user experience.
