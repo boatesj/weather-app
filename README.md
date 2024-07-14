@@ -176,6 +176,8 @@ The app includes robust error handling mechanisms to enhance user experience:
 - **Empty City Field**: If the user attempts to search for weather information without entering a city name, the app prompts the user to enter a city name.
 ![If the city field is empty on click](/assets/images/weatherApp-err.png)
 
+Here is the code that runs the check and handles error and provides a clear, friendly message that guides the user as to what to do next.
+
 ```javascript
 
 async function getWeatherData(city) {
