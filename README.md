@@ -51,3 +51,24 @@ World City Weather App is an interactive and fully-functional web application de
     - [JS-Hint](#js-hint)
 - [Bugs](#bugs)
 - [Credits](#credits)
+
+## Rationale
+
+### Project Introduction
+
+World City Weather App is a user-friendly application designed to provide accurate and up-to-date weather information for cities around the world. The primary objective of this project is to create a simple and intuitive interface where users can quickly access weather data.
+
+### Motivation and Inspiration
+
+The motivation behind creating the World City Weather App stems from the need for a straightforward and accessible tool to check weather conditions. With the increasing reliance on web applications for daily tasks, this project aims to provide a reliable and easy-to-use weather forecasting tool.
+
+### Background Information
+
+Weather forecasting is a critical aspect of daily life, influencing activities and decisions. While numerous weather apps exist, many are cluttered with ads or complex features. This project focuses on delivering essential weather information in a clean and efficient manner.
+
+### Project Scope and Limitations
+
+The scope of the project includes developing the web-based app with the following features:
+- Real-time weather data retrieval.
+- User-friendly interface.
+- Accessibility considerations.
