@@ -126,7 +126,9 @@ colour scheme - 2
 ### Typography
 
 The app utilizes the Roboto font for its clean and professional appearance.
-- ![Roboto](https://fonts.google.com/specimen/Roboto) for the heading and display text.
+- [Roboto](https://fonts.google.com/specimen/Roboto) for the heading and display text.
+
+![Weather App Style](assets/images/weatherApp-style1.png)
 
 
 ### Wireframes
