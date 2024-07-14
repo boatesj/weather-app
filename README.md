@@ -175,3 +175,21 @@ The app includes robust error handling mechanisms to enhance user experience:
 ![If a city cannot be found](/assets/images/weatherApp-4.png)
 - **Empty City Field**: If the user attempts to search for weather information without entering a city name, the app prompts the user to enter a city name.
 ![If the city field is empty on click](/assets/images/weatherApp-err.png)
+
+```javascript
+
+async function getWeatherData(city) {
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+    const response = await fetch(apiUrl);
+
+    if (!response.ok) {
+        const { cod, message } = await response.json();
+        if (cod === "404") {
+            throw new Error(`City not found. Please check the city name and try again.`);
+        } else {
+            throw new Error(`Error ${cod}: ${message}`);
+        }
+    }
+
+    return await response.json();
+}
