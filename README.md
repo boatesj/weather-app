@@ -171,10 +171,13 @@ Provides a brief introduction and prompts the user to enter a city name.
 
 The app includes robust error handling mechanisms to enhance user experience:
 
-- **Invalid City Name**: If a user enters a city name that cannot be found, the app displays a friendly error message informing the user that the city was not found and suggests checking the spelling.
-![If a city cannot be found](/assets/images/weatherApp-4.png)
 - **Empty City Field**: If the user attempts to search for weather information without entering a city name, the app prompts the user to enter a city name.
+
 ![If the city field is empty on click](/assets/images/weatherApp-err.png)
+
+- **Invalid City Name**: If a user enters a city name that cannot be found, the app displays a friendly error message informing the user that the city was not found and suggests checking the spelling.
+
+![If a city cannot be found](/assets/images/weatherApp-4.png)
 
 Here is the code that performs the check, handles any errors, and provides a clear, friendly message to guide the user on what to do next.
 
@@ -257,5 +260,38 @@ To clone the repository:
 ### APIs
 
 This project uses the OpenWeather API. Sign up for an API key [here](https://openweathermap.org/api).
+
+## Testing
+Details about manual and automated testing can be found in the [test.md](test.md) file.
+
+### Manual Testing
+
+Testing involved manually checking the functionality across different browsers and devices to ensure compatibility and responsiveness.
+
+### Automated Testing
+
+- **W3C Validator**: HTML and CSS validation.
+- **Lighthouse**: Performance, accessibility, and SEO scores.
+- **JS Hint**: JavaScript code quality and error checking.
+
+## Testing
+
+### Manual Testing
+
+Testing involved manually checking the functionality across different browsers and devices to ensure compatibility and responsiveness.
+
+### Automated Testing
+
+- **W3C Validator**: HTML and CSS validation.
+- **Lighthouse**: Performance, accessibility, and SEO scores.
+- **JS Hint**: JavaScript code quality and error checking.
+
+### Bugs
+
+- **Known Issue**: In some browsers, the weather icons might not load correctly. This is being investigated.
+
+## Credits
+
+This project was developed as part of the Code Institute Full Stack Software Development Diploma. Special thanks to online resources such as Stack Overflow, W3C, MDN, and the WebDev Simplified YouTube channel for guidance and solutions to various challenges.
 
 
