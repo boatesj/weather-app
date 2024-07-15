@@ -20,3 +20,22 @@
 | City input field | Shows error if input is empty when submitting | Submitted empty input field | Error displayed | Pass |
 | City input field | Fetches weather data when a valid city is entered | Entered valid city and submitted | Weather data displayed | Pass |
 | City input field | Shows error if an invalid city is entered | Entered invalid city and submitted | Error displayed | Pass |
+
+## Weather Display
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| ------- | ---------------- | ----------------- | ------ | --------- |
+| Weather Information | Displays correct weather information | Fetched weather for a valid city | Correct weather information displayed | Pass |
+| Error Handling | Displays error for invalid city | Entered an invalid city | Friendly error message displayed | Pass |
+| Error Handling | Displays error for empty input | Submitted without entering a city | Prompt to enter a city displayed | Pass |
+
+## Pop-ups and Modals
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| ------- | ---------------- | ----------------- | ------ | --------- |
+| How To Use Modal | Displays instructions on how to use the app | Clicked How To Use link | Instructions displayed | Pass |
+| How To Use Modal | Closes when close button is clicked | Clicked close button | Modal closed | Pass |
+| How To Use Modal | Closes when clicking outside of the modal | Clicked outside of modal | Modal closed | Pass |
+| About Modal | Displays information about the app | Clicked About link | Information displayed | Pass |
+| About Modal | Closes when close button is clicked | Clicked close button | Modal closed | Pass |
+| About Modal | Closes when clicking outside of the modal | Clicked outside of modal | Modal closed | Pass |
