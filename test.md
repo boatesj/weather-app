@@ -54,3 +54,44 @@
 | ------- | ---------------- | ----------------- | ------ | --------- |
 | Weather Icon Loading | Icons load correctly across all browsers | Checked icon loading in various browsers | Icons not loading in some browsers | Fail (see bugs section in README for more information) |
 
+# Automated Testing
+
+## HTML
+
+The Nu HTML Checker returned: "Document checking completed. No errors or warnings to show."
+
+![HTML code](/assets/images/nu-html-checker.png)
+
+## CSS
+
+The W3C CSS Validator returned 5 errors:
+
+6 .fa-beat var(--fa-animation-delay, 0) is not an animation-delay value : var(--fa-animation-delay, 0)
+6 .fa-beat-fade, .fa-fade var(--fa-animation-delay, 0) is not an animation-delay value : var(--fa-animation-delay, 0)
+6 .fa-flip var(--fa-animation-delay, 0) is not an animation-delay value : var(--fa-animation-delay, 0)
+6 .fa-spin var(--fa-animation-delay, 0) is not an animation-delay value : var(--fa-animation-delay, 0)
+6 .fa-rotate-by var(--fa-rotate-angle, none) is not a transform value : rotate(var(--fa-rotate-angle, none))
+
+![CSS Code](/assets/images/fa-errors.png)
+
+
+These errors are related to the custom properties used by FontAwesome for their animations and transformations. Since these properties are defined within FontAwesome's CSS and are not recognized by the validator, they do not affect my custom code. Moreover, they work correctly in Google Chrome, Firefox, AVG, Safari, and Microsoft Edge browsers.
+
+## JavaScript
+
+JSHint returned no issues when passed through JS Hint. All warnings are ES6 related.
+
+![JSHint](/assets/images/JSHint-1.png)
+
+## Lighthouse Metrics
+
+The Lighthouse Metric test returned scores of 90 and above for the following categories:
+- Performance
+- Accessibility
+- Best Practices
+- SEO
+
+![Lighthouse](/assets/images/lighthouse.png)
+
+
+
