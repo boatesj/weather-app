@@ -39,3 +39,18 @@
 | About Modal | Displays information about the app | Clicked About link | Information displayed | Pass |
 | About Modal | Closes when close button is clicked | Clicked close button | Modal closed | Pass |
 | About Modal | Closes when clicking outside of the modal | Clicked outside of modal | Modal closed | Pass |
+
+## Accessibility
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| ------- | ---------------- | ----------------- | ------ | --------- |
+| Screen Reader Compatibility | All elements are accessible via screen reader | Navigated the app using a screen reader | All elements accessible | Pass |
+| High Contrast Mode | App is usable in high contrast mode | Enabled high contrast mode | App remained fully usable | Pass |
+| Keyboard Navigation | All interactive elements are accessible via keyboard | Navigated the app using keyboard only | All elements accessible | Pass |
+
+## Bugs
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| ------- | ---------------- | ----------------- | ------ | --------- |
+| Weather Icon Loading | Icons load correctly across all browsers | Checked icon loading in various browsers | Icons not loading in some browsers | Fail (see bugs section in README for more information) |
+
