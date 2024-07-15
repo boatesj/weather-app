@@ -270,18 +270,6 @@ Testing involved manually checking the functionality across different browsers a
 
 ### Automated Testing
 
-- **W3C Validator**: HTML and CSS validation.
-- **Lighthouse**: Performance, accessibility, and SEO scores.
-- **JS Hint**: JavaScript code quality and error checking.
-
-## Testing
-
-### Manual Testing
-
-Testing involved manually checking the functionality across different browsers and devices to ensure compatibility and responsiveness.
-
-### Automated Testing
-
 - [**W3C Validator**](https://jigsaw.w3.org/css-validator/): [HTML](https://validator.w3.org/nu/?doc=https%3A%2F%2Fboatesj.github.io%2Fweather-app%2F) and [CSS](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fboatesj.github.io%2Fweather-app%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) validation.
 - [**Lighthouse**](https://lighthouse-metrics.com/): Performance, accessibility, and SEO [scores](https://lighthouse-metrics.com/lighthouse/checks/311aaf55-b393-4097-b1af-b8ba09d99705).
 - [**JS Hint**](https://jshint.com/): JavaScript code quality and error checking.
