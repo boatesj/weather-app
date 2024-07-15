@@ -13,3 +13,10 @@
 | About Modal | Modal closes when clicking anywhere outside of the modal | Clicked outside of the modal | Modal closed | Pass |
 | Header links:hover | Text underlines when links are hovered | Hovered over each header link | Text underlined | Pass |
 
+## Welcome Page
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| ------- | ---------------- | ----------------- | ------ | --------- |
+| City input field | Shows error if input is empty when submitting | Submitted empty input field | Error displayed | Pass |
+| City input field | Fetches weather data when a valid city is entered | Entered valid city and submitted | Weather data displayed | Pass |
+| City input field | Shows error if an invalid city is entered | Entered invalid city and submitted | Error displayed | Pass |
