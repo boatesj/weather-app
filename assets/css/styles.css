@@ -160,23 +160,3 @@ p {
     font-size: 2rem;
     cursor: pointer;
 }
-
-.fa-beat {
-    animation-delay: var(--fa-animation-delay, 0s);
-}
-
-.fa-beat-fade, .fa-fade {
-    animation-delay: var(--fa-animation-delay, 0s);
-}
-
-.fa-flip {
-    animation-delay: var(--fa-animation-delay, 0s);
-}
-
-.fa-spin {
-    animation-delay: var(--fa-animation-delay, 0s);
-}
-
-.fa-rotate-by {
-    transform: rotate(var(--fa-rotate-angle, 0deg));
-}
