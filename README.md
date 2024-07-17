@@ -10,55 +10,56 @@ World City Weather App is an interactive and fully-functional web application de
 ## CONTENTS
 
 - [Rationale](#rationale)
-  - [Project Introduction](#project-introduction)
-  - [Motivation and Inspiration](#motivation-and-inspiration)
+  - [Project Summary](#project-summary)
+  - [Motivation and Goals](#motivation-and-goals)
   - [Background Information](#background-information)
-  - [Project Scope and Limitations](#project-scope-and-limitations)
-  - [Problem Statement](#problem-statement)
-  - [Proposed Solution](#proposed-solution)
-  - [Benefits and Advantages](#benefits-and-advantages)
-  - [Future Versions](#future-versions)
-  - [Summary](#summary)
+  - [Scope and Constraints](#scope-and-constraints)
+  - [Identified Problems](#identified-problems)
+  - [Proposed Features](#proposed-features)
+  - [Advantages and Benefits](#advantages-and-benefits)
+  - [Future Enhancements](#future-enhancements)
+  - [Conclusion](#conclusion)
 - [User Stories](#user-stories)
-- [Design](#design)
-  - [Colour Scheme](#colour-scheme)
-  - [Typography](#typography)
+- [Design Elements](#design-elements)
+  - [Color Palette](#color-palette)
+  - [Font Choices](#font-choices)
   - [Wireframes](#wireframes)
-    - [Desktop](#desktop)
-    - [Tablet](#tablet)
-    - [Mobile](#mobile)
-- [Features](#features)
-  - [Favicon](#favicon)
-  - [The Navbar](#the-navbar)
-  - [The Welcome Page](#the-welcome-page)
-  - [The Weather Display Card](#the-weather-display-card)
-  - [Accessibility](#accessibility)
-- [Technologies](#technologies)
-  - [Languages](#languages)
-  - [Frameworks, Libraries, and Programs](#frameworks-libraries-and-programs)
-- [Deployment and Development](#deployment-and-development)
-  - [Deployment](#deployment)
-  - [Local Development](#local-development)
-    - [Extensions required](#extensions-required)
-    - [How to Fork](#how-to-fork)
-    - [How to Clone](#how-to-clone)
-  - [APIs](#apis)
-- [Testing](#testing)
+    - [Desktop Layout](#desktop-layout)
+    - [Tablet Layout](#tablet-layout)
+    - [Mobile Layout](#mobile-layout)
+- [Application Features](#application-features)
+  - [Favicon Icon](#favicon-icon)
+  - [Navigation Bar](#navigation-bar)
+  - [Introductory Page](#introductory-page)
+  - [Weather Information Display](#weather-information-display)
+  - [Error Handling Mechanisms](#error-handling-mechanisms)
+  - [Accessibility Considerations](#accessibility-considerations)
+- [Technology Stack](#technology-stack)
+  - [Programming Languages](#programming-languages)
+  - [Libraries and Tools](#libraries-and-tools)
+- [Deployment and Development Workflow](#deployment-and-development-workflow)
+  - [Deployment Process](#deployment-process)
+  - [Local Development Setup](#local-development-setup)
+    - [Required Extensions](#required-extensions)
+    - [Forking the Repository](#forking-the-repository)
+    - [Cloning the Repository](#cloning-the-repository)
+  - [APIs Utilized](#apis-utilized)
+- [Testing and Validation](#testing-and-validation)
   - [Manual Testing](#manual-testing)
   - [Automated Testing](#automated-testing)
     - [W3C](#w3c)
     - [Lighthouse](#lighthouse)
     - [JS-Hint](#js-hint)
-- [Bugs](#bugs)
-- [Credits](#credits)
+- [Known Issues](#known-issues)
+- [Acknowledgements](#acknowledgements)
 
 ## Rationale
 
-### Project Introduction
+### Project Summary
 
 World City Weather App is a user-friendly application designed to provide accurate and up-to-date weather information for cities around the world. The primary objective of this project is to create a simple and intuitive interface where users can quickly access weather data.
 
-### Motivation and Inspiration
+### Motivation and Goals
 
 The motivation behind creating the World City Weather App stems from the need for a straightforward and accessible tool to check weather conditions. With the increasing reliance on web applications for daily tasks, this project aims to provide a reliable and easy-to-use weather forecasting tool.
 
@@ -66,7 +67,7 @@ The motivation behind creating the World City Weather App stems from the need fo
 
 Weather forecasting is a critical aspect of daily life, influencing activities and decisions. While numerous weather apps exist, many are cluttered with ads or complex features. This project focuses on delivering essential weather information in a clean and efficient manner.
 
-### Project Scope and Limitations
+### Scope and Constraints
 
 The scope of the project includes developing the web-based app with the following features:
 - Real-time weather data retrieval.
@@ -77,25 +78,25 @@ Known limitations:
 - The app relies on external APIs, which can affect data availability and accuracy.
 - Cross-browser compatibility efforts have been made, but some features might not work optimally on all browsers.
 
-### Problem Statement
+### Identified Problems
 
 The primary problem addressed by the World City Weather App is the need for a simple, ad-free weather application that provides accurate information without unnecessary complexity.
 
-### Proposed Solution
+### Proposed Features
 
 The app proposes the following features to solve the identified problems:
 - Clean and intuitive UI.
 - Reliable weather data from a trusted API.
 - Accessibility features to ensure usability for all users.
 
-### Benefits and Advantages
+### Advantages and Benefits 
 
 - **Educational Value**: Users can learn about current weather conditions globally.
 - **User Engagement**: Simple and interactive interface keeps users engaged.
 - **Accessibility**: Designed to be accessible to all users.
 - **Ease of Use**: No need for additional installations or plugins.
 
-### Future Versions
+### Future Enhancements
 
 Future enhancements may include:
 - Detailed forecasts (hourly, weekly).
@@ -103,7 +104,7 @@ Future enhancements may include:
 - Alerts and notifications for severe weather conditions.
 - Multi-language support.
 
-### Summary
+### Conclusion
 
 World City Weather App is an innovative application providing real-time weather information for cities worldwide. With its clean design and user-friendly interface, it aims to offer an efficient and enjoyable user experience.
 
@@ -114,16 +115,16 @@ World City Weather App is an innovative application providing real-time weather 
 3. **As a frequent traveller, I want to check the weather for multiple cities easily.**
 4. **As a visually impaired user, I want the app to be fully accessible.**
 
-## Design
+## Design Elements
 
-### Colour Scheme
+### Colour Palette
 
 The app uses a clean and modern color scheme with high contrast to ensure readability and appeal. Here is the chosen colour palette  ![Colour palette](/assets/images/color-palette.png)
 colour scheme - 1
 ![Colour palette](/assets/images/color-palette-2.png)
 colour scheme - 2
 
-### Typography
+### Font Choices
 
 The app utilizes the Roboto font for its clean and professional appearance.
 - [Roboto](https://fonts.google.com/specimen/Roboto) for the heading and display text.
@@ -133,25 +134,25 @@ The app utilizes the Roboto font for its clean and professional appearance.
 
 ### Wireframes
 
-- **Desktop**: ![Desktop Wireframe](/assets/images/desktop-wireframe.png)
-- **Tablet**: ![Tablet Wireframe](/assets/images/tablet-wireframes.png)
-- **Mobile**: ![Mobile Wireframe](/assets/images/mobile-wireframes.png)
+- **Desktop Layout**: ![Desktop Wireframe](/assets/images/desktop-wireframe.png)
+- **Tablet Layout**: ![Tablet Wireframe](/assets/images/tablet-wireframes.png)
+- **Mobile Layout**: ![Mobile Wireframe](/assets/images/mobile-wireframes.png)
 
-## Features
+## Application Features
 
-### Favicon
+### Favicon Icon
 
 The app features a weather-themed favicon for easy identification.
 - **Favicon**: ![World City Weather App](/assets/images/weatherApp-favicon.png)
 
 
-### The Navbar
+### Navigation Bar
 
 - **Home**: Links back to the main page. ![Main page](/assets/images/weatherApp-5.png)
 - **How to Use**: Opens a pop-up with instructions. ![How to use pop-up message](/assets/images/how-to.png)
 - **About**: Opens a pop-up with information about the developer. ![About pop-up message](/assets/images/wa-about.png)
 
-### The Welcome Page
+### Introductory Page
 
 Provides a brief introduction and prompts the user to enter a city name.
 ![Welcome](/assets/images/weatherApp-5.png)
@@ -200,28 +201,28 @@ async function getWeatherData(city) {
 }
 ```
 
-### Accessibility
+### Accessibility Considerations
 
 Designed with accessibility in mind, including high contrast and screen reader compatibility.
 
-## Technologies
+## Technology Stack
 
-### Languages
+### Programming Languages
 
 - HTML
 - CSS
 - JavaScript
 
-### Frameworks, Libraries, and Programs
+### Libraries and Tools
 
 - **FontAwesome**: For weather icons.
 - **Google Fonts**: For typography.
 - **OpenWeather API**: For fetching weather data.
 - **Balsamiq**: For the wireframes.
 
-## Deployment and Development
+## Deployment and Development Workflow
 
-### Deployment
+### Deployment Process
 
 The site is deployed using GitHub Pages. [Visit the deployed site here](https://boatesj.github.io/weather-app/).
 
@@ -233,13 +234,13 @@ To deploy the site using GitHub Pages:
 4. Select Pages in the left-hand navigation menu.
 5. From the source dropdown, select main branch and press save.
 
-### Local Development
+### Local Development Setup
 
-#### Extensions required
+#### Required Extensions 
 
 Your IDE will need HTML, CSS, and JavaScript extensions installed.
 
-#### How to Fork
+#### Forking the Repository
 
 To fork the repository:
 
@@ -247,7 +248,7 @@ To fork the repository:
 2. Go to the repository for this project.
 3. Click the Fork button in the top right corner.
 
-#### How to Clone
+#### Cloning the Repository
 
 To clone the repository:
 
@@ -257,11 +258,11 @@ To clone the repository:
 4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
 
-### APIs
+### APIs Utilised
 
 This project uses the OpenWeather API. Sign up for an API key [here](https://openweathermap.org/api).
 
-## Testing
+## Testing and Validation
 Details about manual and automated testing can be found in the [test.md](test.md) file.
 
 ### Manual Testing
@@ -274,11 +275,11 @@ Testing involved manually checking the functionality across different browsers a
 - [**Lighthouse**](https://lighthouse-metrics.com/): Performance, accessibility, and SEO [scores](https://lighthouse-metrics.com/lighthouse/checks/311aaf55-b393-4097-b1af-b8ba09d99705).
 - [**JS Hint**](https://jshint.com/): JavaScript code quality and error checking.
 
-### Bugs
+### Known Issues
 
-- **Known Issue**: In some browsers, the weather icons might not load correctly. This is being investigated.
+- **Weather Icon Loading**: In some browsers, the weather icons might not load correctly. This is being investigated.
 
-## Credits
+## Acknowledgements
 
 This project was developed as part of the Code Institute Full Stack Software Development Diploma. Special thanks to online resources such as Stack Overflow, W3C, MDN, and the WebDev Simplified YouTube channel for guidance and solutions to various challenges.
 
